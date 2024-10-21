@@ -12,11 +12,11 @@ public class Ejercicio4 {
 
         System.out.printf("números generados: %s%n", Arrays.toString(array));
 
-        final var ordenarNumeros = Arrays
+        final var listaOrdenado = Arrays
                 .stream(array)
                 .sorted()
                 .toArray();
 
-        System.out.printf("Orden de números : %s%n", Arrays.toString(ordenarNumeros));
+        System.out.printf("Números ordenados: %s%n", Arrays.toString(listaOrdenado));
     }
 }
