@@ -10,13 +10,13 @@ public class Ejercicio4 {
         final var cantidad = new Faker().number().numberBetween(20, 30);
         final var array = Utiles.generarArrayIntAletario(cantidad, 10, 50);
 
-        System.out.println("números generados: " + Arrays.toString(array));
+        System.out.printf("números generados: %s%n", Arrays.toString(array));
 
-        final var resultado = Arrays
+        final var ordenarNumeros = Arrays
                 .stream(array)
                 .sorted()
                 .toArray();
 
-        System.out.println("Orden de números : " + Arrays.toString(resultado));
+        System.out.printf("Orden de números : %s%n", Arrays.toString(ordenarNumeros));
     }
 }

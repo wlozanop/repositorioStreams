@@ -10,12 +10,12 @@ public class Ejercicio3 {
         final var cantidad = new Faker().number().numberBetween(20, 30);
         final var array = Utiles.generarArrayIntAletario(cantidad, 10, 50);
 
-        System.out.println("Números generados: " + Arrays.toString(array));
+        System.out.printf("Números generados: %s%n", Arrays.toString(array));
 
         final var resultado = Arrays
                 .stream(array)
                 .sum();
 
-        System.out.println("Suma total: " + resultado);
+        System.out.printf("Suma total: %s%n", resultado);
     }
 }
