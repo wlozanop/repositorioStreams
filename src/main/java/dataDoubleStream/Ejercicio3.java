@@ -1,7 +1,7 @@
 package dataDoubleStream;
 
-import Utilities.Utiles;
 import com.github.javafaker.Faker;
+import utilities.Utiles;
 
 import java.util.Arrays;
 
