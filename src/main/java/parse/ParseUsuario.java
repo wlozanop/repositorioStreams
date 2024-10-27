@@ -6,7 +6,7 @@ import modelo.Usuario;
 import java.util.HashMap;
 import java.util.Map;
 
-public class UsuarioParse {
+public class ParseUsuario {
     //Método para obtener la información del excel
     public static Map<String, Usuario> getUsuarioLista() {
         final var listaUsuario = ExcellReader.getUsuariosList();
