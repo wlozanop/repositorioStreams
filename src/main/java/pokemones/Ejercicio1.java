@@ -9,7 +9,7 @@ public class Ejercicio1 {
         final var pokemon = listaJson
                 .stream()
                 .filter(x -> x.getTipo().equals("AIRE"))
-                .filter(x -> Boolean.FALSE.equals(x.isEsMacho()))
+                .filter(x -> !x.macho())
                 .toList();
 
         System.out.println("Lista pokemon: \n" + pokemon);

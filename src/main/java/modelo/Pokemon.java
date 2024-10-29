@@ -22,7 +22,7 @@ public class Pokemon {
     @JsonProperty("velocidad")
     private double velocidad;
     @JsonProperty("esMacho")
-    private boolean esMacho;
+    private boolean macho;
     @JsonProperty("entrenador")
     private String entrenador;
     @JsonProperty("ubicacion")
@@ -61,7 +61,7 @@ public class Pokemon {
                 ataqueEspecial,
                 defensaEspecial,
                 velocidad,
-                esMacho,
+                macho,
                 entrenador,
                 ubicacion,
                 tipo
@@ -104,8 +104,8 @@ public class Pokemon {
         return velocidad;
     }
 
-    public boolean isEsMacho() {
-        return esMacho;
+    public boolean macho() {
+        return macho;
     }
 
     public String getEntrenador() {
@@ -122,5 +122,10 @@ public class Pokemon {
 
     public void setHp(int hp) {
         this.hp = hp;
+    }
+
+    public Pokemon aumentarHp(int hp) {
+        this.hp += hp;
+        return this;
     }
 }

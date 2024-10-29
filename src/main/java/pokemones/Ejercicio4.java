@@ -6,11 +6,11 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         final var listaJson = JsonReader.getPokemon();
 
-        final var listaPokemon = listaJson
+        final var mapPokemon = listaJson
                 .stream()
-                .map(x -> x.getHp() + 500)
+                .map(x -> x.aumentarHp(500))
                 .toList();
 
-        System.out.println("Lista pokemon aumentado el HP: \n" + listaPokemon);
+        System.out.println("Aumentar el HP de los Pokemon: \n" + mapPokemon);
     }
 }
